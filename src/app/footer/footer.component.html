@@ -2,9 +2,9 @@
     <div class="row well well-sm">
         <span class="col-xs-5">&copy; 2017 Mahdi Saeikhalili</span>
         <span class="col-xs-7 text-right">
-                <a href="#"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+            <span *ngFor="let link of links">
+            <a [href]="link.url"><i [class]="link.icon" aria-hidden="true"></i></a>
             </span>
+        </span>
     </div>
 </footer>
