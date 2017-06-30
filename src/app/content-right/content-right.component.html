@@ -1,6 +1,5 @@
-<div class="alert alert-success">
-    <h4>slack</h4>
-    <p> slack is a chat app with lots of feature that makes it usefull for teamwork checkout
-        <a href="https://slack.com/"> here </a> for sign up.
-    </p>
+<div class="alert alert-success" *ngFor="let detail of details">
+    <h4>{{detail.title}}</h4>
+    <p> {{detail.desc}} </p>
+    <a [href]="detail.url"> chec this out. </a>
 </div>
