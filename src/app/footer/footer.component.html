@@ -1,6 +1,6 @@
 <footer class="container-fluid">
     <div class="row well well-sm">
-        <span class="col-xs-5">&copy; 2017 Mahdi Saeikhalili</span>
+        <span class="col-xs-5">&copy; {{ copyright }} </span>
         <span class="col-xs-7 text-right">
             <span *ngFor="let link of links">
             <a [href]="link.url"><i [class]="link.icon" aria-hidden="true"></i></a>
