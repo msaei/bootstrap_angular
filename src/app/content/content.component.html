@@ -1,7 +1,15 @@
 <div class="container-fluid">
     <div class="row">
-        <app-content-center></app-content-center>
-        <app-content-left></app-content-left>
-        <app-content-right></app-content-right>
+        <div class="col-md-6 col-md-push-3 col-sm-6">
+            <app-content-center></app-content-center>
+        </div>
+
+        <div class="col-md-3 col-md-pull-6 col-sm-6">
+            <app-content-left></app-content-left>
+        </div>
+
+        <div class="col-md-3 col-sm-12 hidden-xs">
+            <app-content-right></app-content-right>
+        </div>
     </div>
 </div>
