@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-center.component.css']
 })
 export class ContentCenterComponent implements OnInit {
-  public test: string = "<h1>hello</h1>";
+  
   public posts: any[] = [
     {
       heading: 'quick Git and Bootstrap - Monday 6/5/17',
