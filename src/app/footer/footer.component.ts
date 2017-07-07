@@ -10,6 +10,9 @@ export class FooterComponent implements OnInit {
   public links: any[]= [
     {title:'github', url: '#', icon: 'fa fa-github-square fa-3x'},
     {title:'linkedin', url: '#', icon: 'fa fa-linkedin-square fa-3x'},
+    {title:'twitter', url: '#', icon: 'fa fa-twitter-square fa-3x'},
+    {title:'twitter', url: '#', icon: 'fa fa-twitter-square fa-3x'},
+    {title:'twitter', url: '#', icon: 'fa fa-twitter-square fa-3x'},
     {title:'twitter', url: '#', icon: 'fa fa-twitter-square fa-3x'}
   ]
   constructor() { }
