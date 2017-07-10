@@ -10,6 +10,9 @@ import { ContentCenterComponent } from './content-center/content-center.componen
 import { ContentRightComponent } from './content-right/content-right.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { CheetsheetsComponent } from './cheetsheets/cheetsheets.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ContentComponent } from './content/content.component';
     ContentCenterComponent,
     ContentRightComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    ContactComponent,
+    AboutComponent,
+    CheetsheetsComponent
   ],
   imports: [
     BrowserModule
