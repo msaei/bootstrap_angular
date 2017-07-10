@@ -13,6 +13,7 @@ import { ContentComponent } from './content/content.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CheetsheetsComponent } from './cheetsheets/cheetsheets.component';
+import { routing } from './app.routs';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CheetsheetsComponent } from './cheetsheets/cheetsheets.component';
     CheetsheetsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
