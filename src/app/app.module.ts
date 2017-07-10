@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CheetsheetsComponent } from './cheetsheets/cheetsheets.component';
 import { routing } from './app.routs';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { routing } from './app.routs';
     ContentComponent,
     ContactComponent,
     AboutComponent,
-    CheetsheetsComponent
+    CheetsheetsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
