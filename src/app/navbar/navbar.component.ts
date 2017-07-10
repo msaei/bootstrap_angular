@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  public brand: any = { title: "MyCodeDiary", url: "#" };
+  public brand: any = { title: "MyCodeDiary", url: '/home' };
   public links: any[] = [
-    { title: 'Home', url: '#'},
-    { title: 'Tutorials', url: '#'},
-    { title: 'Cheat Sheets', url: '#'},
-    { title: 'Tools', url: '#'}
+    { title: 'Home', url: '/home'},
+    { title: 'About', url: '/about'},
+    { title: 'Cheat Sheets', url: '/cheetsheets'},
+    { title: 'Contact', url: '/contact'}
   ]
 
   constructor() { }
