@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { CheetsheetsComponent } from './cheetsheets/cheetsheets.component';
 import { routing } from './app.routs';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AdminComponent } from './admin/admin.component';
+import { ActivateGuard } from './activate-guard';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,14 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ContactComponent,
     AboutComponent,
     CheetsheetsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     routing
   ],
-  providers: [],
+  providers: [ActivateGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
