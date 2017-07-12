@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ActivateGuard implements CanActivate {
 
-    private can: boolean;
+    public can: boolean;
 
     canActivate(){
         if (!this.can) {
