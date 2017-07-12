@@ -1,0 +1,6 @@
+<p>
+    search works!
+</p>
+<a [routerLink]="['/search']" [queryParams]="{key: 'github'}"> results for github </a>
+<input type="text" #keyword placeholder="search">
+<button (click)="searchfor(keyword.value)">search</button>

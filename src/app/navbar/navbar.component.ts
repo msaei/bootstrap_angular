@@ -21,4 +21,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  public searchfor(keyword: string): void{
+    console.log(keyword);
+  }
+
 }

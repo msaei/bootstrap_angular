@@ -12,11 +12,13 @@ import { PostComponent } from './post/post.component';
 import { MissionComponent } from './mission/mission.component';
 import { VisionComponent } from './vision/vision.component';
 import { StaffComponent } from './staff/staff.component';
+import { SearchComponent } from './search/search.component';
 
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: ContentComponent },
+  { path: 'search', component: SearchComponent },
   { path: 'post/:id', component: PostComponent },
   { path: 'about', component: AboutComponent,
   children: [

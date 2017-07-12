@@ -23,6 +23,7 @@ import { PostComponent } from './post/post.component';
 import { MissionComponent } from './mission/mission.component';
 import { VisionComponent } from './vision/vision.component';
 import { StaffComponent } from './staff/staff.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { StaffComponent } from './staff/staff.component';
     PostComponent,
     MissionComponent,
     VisionComponent,
-    StaffComponent
+    StaffComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
