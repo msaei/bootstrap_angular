@@ -17,6 +17,7 @@ import { routing } from './app.routs';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AdminComponent } from './admin/admin.component';
 import { ActivateGuard } from './activate-guard';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ActivateGuard } from './activate-guard';
     AboutComponent,
     CheetsheetsComponent,
     PagenotfoundComponent,
-    AdminComponent
+    AdminComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

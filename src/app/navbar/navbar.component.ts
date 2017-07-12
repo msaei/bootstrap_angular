@@ -12,7 +12,8 @@ export class NavbarComponent implements OnInit {
     { title: 'About', url: '/about'},
     { title: 'Cheat Sheets', url: '/cheetsheets'},
     { title: 'Contact', url: '/contact'},
-    { title: 'Admin', url: '/admin'}
+    { title: 'Admin', url: '/admin'},
+    { title: 'Login', url: '/login'}
   ]
 
   constructor() { }

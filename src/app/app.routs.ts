@@ -6,6 +6,7 @@ import { CheetsheetsComponent } from './cheetsheets/cheetsheets.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AdminComponent } from './admin/admin.component';
 import { ActivateGuard } from './activate-guard';
+import { LoginComponent } from './login/login.component';
 
 
 export const routes: Routes = [
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'cheetsheets', component: CheetsheetsComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent, canActivate: [ActivateGuard] },
   { path: '**', component: PagenotfoundComponent }
 ];
