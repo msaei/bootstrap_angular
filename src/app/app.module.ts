@@ -20,6 +20,9 @@ import { ActivateGuard } from './activate-guard';
 import { LoginComponent } from './login/login.component';
 import { DeactivateGuard } from './deactivate-guard';
 import { PostComponent } from './post/post.component';
+import { MissionComponent } from './mission/mission.component';
+import { VisionComponent } from './vision/vision.component';
+import { StaffComponent } from './staff/staff.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { PostComponent } from './post/post.component';
     PagenotfoundComponent,
     AdminComponent,
     LoginComponent,
-    PostComponent
+    PostComponent,
+    MissionComponent,
+    VisionComponent,
+    StaffComponent
   ],
   imports: [
     BrowserModule,
