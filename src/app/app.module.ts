@@ -18,6 +18,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AdminComponent } from './admin/admin.component';
 import { ActivateGuard } from './activate-guard';
 import { LoginComponent } from './login/login.component';
+import { DeactivateGuard } from './deactivate-guard';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,10 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     routing
   ],
-  providers: [ActivateGuard],
+  providers: [
+    ActivateGuard,
+    DeactivateGuard
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
