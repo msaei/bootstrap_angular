@@ -8,10 +8,12 @@ import { AdminComponent } from './admin/admin.component';
 import { ActivateGuard } from './activate-guard';
 import { LoginComponent } from './login/login.component';
 import { DeactivateGuard } from './deactivate-guard';
+import { PostComponent } from './post/post.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: ContentComponent },
+  { path: 'post/:id', component: PostComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent, canDeactivate: [DeactivateGuard] },
   { path: 'cheetsheets', component: CheetsheetsComponent },

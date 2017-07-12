@@ -19,6 +19,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ActivateGuard } from './activate-guard';
 import { LoginComponent } from './login/login.component';
 import { DeactivateGuard } from './deactivate-guard';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { DeactivateGuard } from './deactivate-guard';
     CheetsheetsComponent,
     PagenotfoundComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
