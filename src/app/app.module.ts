@@ -24,6 +24,7 @@ import { MissionComponent } from './mission/mission.component';
 import { VisionComponent } from './vision/vision.component';
 import { StaffComponent } from './staff/staff.component';
 import { SearchComponent } from './search/search.component';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { SearchComponent } from './search/search.component';
   ],
   providers: [
     ActivateGuard,
-    DeactivateGuard
+    DeactivateGuard,
+    PostService
     ],
   bootstrap: [AppComponent]
 })
