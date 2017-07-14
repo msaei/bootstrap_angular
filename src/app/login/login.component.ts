@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivateGuard } from '../activate-guard';
 
+import { UserService } from '../user.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,7 +10,7 @@ import { ActivateGuard } from '../activate-guard';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public activateGuard: ActivateGuard) { }
+  constructor(public activateGuard: ActivateGuard, private _us: UserService) { }
 
   ngOnInit() {
   }
@@ -16,4 +18,11 @@ export class LoginComponent implements OnInit {
  toggleActivation(can: boolean): void {
   this.activateGuard.setActivation(can);
  }
+
+ public signInGoogle(): void {
+     this._us.signInGoogle((error: any, success: any) => {
+       console.log(error);
+       console.log(success);
+     });
+   }
 }

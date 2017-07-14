@@ -25,6 +25,7 @@ import { VisionComponent } from './vision/vision.component';
 import { StaffComponent } from './staff/staff.component';
 import { SearchComponent } from './search/search.component';
 import { PostService } from './post.service';
+import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { PostService } from './post.service';
   providers: [
     ActivateGuard,
     DeactivateGuard,
-    PostService
+    PostService,
+    UserService
     ],
   bootstrap: [AppComponent]
 })
